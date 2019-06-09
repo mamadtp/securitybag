@@ -1,0 +1,35 @@
+﻿<Window x:Class="SecurityBag.ChangePass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SecurityBag"
+        mc:Ignorable="d"
+        Title="ChangePass" Height="260.105" WindowStartupLocation="CenterScreen" Width="470" AllowsTransparency="True" Background="Transparent" WindowStyle="None" Loaded="Window_Loaded">
+    <Grid>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="249" Margin="10,10,0,0" RadiusY="10" RadiusX="10" Stroke="#FFBCBCBC" VerticalAlignment="Top" Width="450"/>
+        <Image HorizontalAlignment="Left" Opacity="0.3" Source="img/back2.png" Height="191" Margin="10,56,0,0" VerticalAlignment="Top" Width="450"/>
+        <Rectangle HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" RadiusY="10" RadiusX="10" Stroke="#FFC7C7C7" VerticalAlignment="Top" Width="450" MouseDown="Rectangle_MouseDown">
+
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="img/header2.png"/>
+            </Rectangle.Fill>
+
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="11" Cursor="Hand" Source="img/closeicon.png" Opacity="0.5" Margin="53,30,0,0" VerticalAlignment="Top" Width="13" MouseDown="Image_MouseDown"/>
+        <Label Content="تغییر رمزعبور" HorizontalAlignment="Left" Margin="314,22,0,0" VerticalAlignment="Top" FontFamily="B Yekan" FontSize="14"/>
+        <Rectangle Fill="#FFF4F4F4" HorizontalAlignment="Left" Height="33" Margin="10,224,0,0" RadiusY="10" RadiusX="10" Stroke="#FFC2C2C2" VerticalAlignment="Top" Width="450"/>
+        <Button  Content="ثبت" IsDefault="True" HorizontalAlignment="Left" Margin="349,228,0,0" VerticalAlignment="Top" Width="75" Height="25" Background="#FFC0C02D" Foreground="White" Click="btnConfirm"/>
+        <Button Click="btnCancel" Content="انصراف" IsCancel="True" HorizontalAlignment="Left" Margin="269,227,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+
+
+        <Label Content="رمز عبور:" HorizontalAlignment="Left" FlowDirection="RightToLeft" Margin="330,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="رمز عبور جدید:" HorizontalAlignment="Left" FlowDirection="RightToLeft" Margin="330,125,0,0" VerticalAlignment="Top"/>
+        <Label Content="تکرار رمز عبور جدید:" HorizontalAlignment="Left" FlowDirection="RightToLeft" Margin="330,156,0,0" VerticalAlignment="Top"/>
+        <PasswordBox HorizontalAlignment="Left"  Name="txtPass" TabIndex="0" FlowDirection="RightToLeft" Height="23" Margin="119,78,0,0"  VerticalAlignment="Top" Width="156"/>
+        <PasswordBox HorizontalAlignment="Left" Name="txtNewPass" TabIndex="1" FlowDirection="RightToLeft" Height="23" Margin="119,128,0,0"  VerticalAlignment="Top" Width="156"/>
+        <PasswordBox HorizontalAlignment="Left" x:Name="txtNewPass2" TabIndex="1" FlowDirection="RightToLeft" Height="23" Margin="119,158,0,0"  VerticalAlignment="Top" Width="156"/>
+
+
+    </Grid>
+</Window>

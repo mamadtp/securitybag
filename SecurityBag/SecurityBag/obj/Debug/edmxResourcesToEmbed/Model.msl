@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SecurityBagModelStoreContainer" CdmEntityContainer="SecurityBagEntities1">
+    <EntitySetMapping Name="files">
+      <EntityTypeMapping TypeName="SecurityBagModel.file">
+        <MappingFragment StoreEntitySet="files">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="iv" ColumnName="iv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="SecurityBagModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="key" ColumnName="key" />
+          <ScalarProperty Name="iv" ColumnName="iv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="deleteFile" FunctionName="SecurityBagModel.Store.deleteFile" />
+    <FunctionImportMapping FunctionImportName="delteUser" FunctionName="SecurityBagModel.Store.delteUser" />
+    <FunctionImportMapping FunctionImportName="insertFile" FunctionName="SecurityBagModel.Store.insertFile" />
+    <FunctionImportMapping FunctionImportName="insertUser" FunctionName="SecurityBagModel.Store.insertUser" />
+  </EntityContainerMapping>
+</Mapping>
