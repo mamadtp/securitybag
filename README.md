@@ -33,7 +33,7 @@ then if you have all of them open project and compile it.
 
 ## Authors
 
-* **Mohamad Taghipour** - *Initial work* - [Tp](https://github.com/mamadtp)
+* **Mohamad Taghipour** - *-------->* - [Tp](https://github.com/mamadtp)
 
 
 
