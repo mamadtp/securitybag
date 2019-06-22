@@ -3,9 +3,7 @@ A bag for your file with C# in Shadow!
 each user can have own files and they are encrypting by AES
 and passwords hashing by SHA256!
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
